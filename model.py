@@ -9,10 +9,10 @@ class Docflow():
         self.stages = stages
 
     def add_stage(self, stage):
-        self.stages.append(stage)
+        self.stages.append(stage.phrases)
 
     def construct(self):
-        for stage in stages:
+        for stage in self.stages:
             print stage
 
 class Stages():
